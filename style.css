@@ -74,8 +74,9 @@ a:active{
 }
 button{
     background-color: #3882F6;
+    border-color: #3882F6 ;
     color: #F9FAF8 ;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 10px;
@@ -86,4 +87,33 @@ button{
     width: 600px;
     text-align: center;
     color: #F9FAF8;
+}
+.information{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.information h3{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+.sub-image{
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.image-text{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
 }
