@@ -5,16 +5,16 @@ body{
     display: flex;
     margin: 0;
     flex-direction: column;
+    height: 100vh;
 }
 /* HEADER */
-.header{
-    background-color: #1F2937;
-}
-.header{
+.header, .footer{
     display: flex;
     justify-content: space-between;
     align-items:  center;
-    padding: 18px 0px;
+    height: 80px;
+    padding: 20px 0;
+    background-color: #1F2937;
 }
 .left{
     margin-left: 10%;
@@ -52,12 +52,11 @@ a:active{
 /* BODY */
 
 .body{
-    display: flex;
-    flex-direction: column;
+    flex: 1;
 }
 .body .hero{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #1F2937;
     gap: 100px;
     padding: 70px 0px;
@@ -68,7 +67,7 @@ a:active{
     font-weight: 900;
 }
 
-.hero p{
+.hero p, .footer{
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -88,7 +87,7 @@ button{
     text-align: center;
     color: #F9FAF8;
 }
-.information{
+.body .information{
     text-align: center;
     padding-bottom: 100px;
 }
@@ -111,9 +110,58 @@ button{
 }
 
 .image-text{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 150px;
+}
+
+.body .quote{
+    background-color: #E5E7EB;
+    padding: 200px;
+}
+
+.quote .text{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    width: 900px;
+    margin: auto;
+}
+#from{
+    width:450px;
+    font-weight: bold;
+    margin-left: auto;
+}
+.body .action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.blue{
+    display: flex;
+    background-color: #3882F6;
+    padding: 30px 60px;
+    color: #F9FAF8;
+    border-radius: 10px;
+    width: 700px;
+}
+.blue h3{
+    margin-bottom: 0px;
+}
+.blue p{
+    margin-top: 0px;
+}
+.blue button{
+    border: 2px solid #F9FAF8;
+    margin: auto;
+}
+
+/*FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
