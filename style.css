@@ -6,14 +6,22 @@ body{
     margin: 0;
     flex-direction: column;
 }
+/* HEADER */
 .header{
     background-color: #1F2937;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 18px;
 }
-
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    padding: 18px 0px;
+}
+.left{
+    margin-left: 10%;
+}
+.right{
+    margin-right: 7%;
+}
 .header .logo{
     font-size: 24px;
     color: #F9FAF8;
@@ -39,4 +47,43 @@ a:link,a:visited{
 
 a:active{
     color: red;
+}
+
+/* BODY */
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.body .hero{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F2937;
+    gap: 100px;
+    padding: 70px 0px;
+}
+.hero .main-text{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+button{
+    background-color: #3882F6;
+    color: #F9FAF8 ;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.image{
+    background-color: gray;
+    padding: 100px 100px;
+    width: 600px;
+    text-align: center;
+    color: #F9FAF8;
 }
